@@ -82,7 +82,7 @@ pipeline {
             }
             steps{
                 script {
-                    git branch: 'feature/ansibleNexus', url: 'https://github.com/momess888/NexusLate.git';
+                    git branch: 'feature/ansibleNexus', url: 'https://github.com/ranjit4github/Ansible_Demo_Project.git';
                 }
                 sh '''
                     ansible-playbook -e vers=${BUILD_NUMBER} roles/site.yml
